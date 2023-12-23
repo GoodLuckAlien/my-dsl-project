@@ -1,0 +1,110 @@
+<view class="container" >
+    <view class="head" >
+       <image class="headimage" src="{{ image }}" />
+       <view class="headName" >首页</view>
+       <view class="headName" >沸点</view>
+       <view class="headName" >课程</view>
+       <view class="headName" >直播</view>
+       <view class="headName" >活动</view>
+       <view class="headName" >竞赛</view>
+       <view class="headName" >商城</view>
+       <view class="headName" >APP</view>
+       <view class="headName" >插件</view>
+       <view class="my" >
+            <view class="writeCenter" >创作者中心</view>
+            <image class="myImage" src="{{ myImage }}"  />
+       </view>
+    </view>
+    <view class="mainContent" >
+       <view class="main-left" >
+           <view class="main" >
+                <image class="mainImage" src="{{ myImage }}"  />
+                <view >
+                    <view class="mainName" >{{ name }}</view>
+                    <view class="mainDes" >FE | 攻粽号：前端Sharing</view>
+                    <view class="mainDes" >连载小册《大前端跨端开发指南》出版啦🎉🎉，小册《React进阶实践指南》作者，强烈推荐一本书籍《深入浅出React 开发指南》🎉，</view>
+                </view>
+                <view class="mainSet" bind:tap="handleClick"  >设置名称</view>
+           </view>
+           <view class="course" >
+                <view class="tab" >
+                    <view class="tabItem" >动态</view>
+                    <view class="tabItem" >文章</view>
+                    <view class="tabItem" >专栏</view>
+                    <view class="tabItem" >沸点</view>
+                    <view class="tabItem active" >课程</view>
+                    <view class="tabItem" >收藏集</view>
+                    <view class="tabItem" >关注</view>
+                    <view class="tabItem" >赞</view>
+                </view>
+                <view class="courseItem" >
+                    <image class="courseImage" src="./WechatIMG36792.png" />
+                    <view class="courseContent" >
+                       <view class="courseName" >大前端跨端开发指南</view>
+                       <view class="courseDes" >小程序+ RN + DSL ，全方位讲解前端跨端技术</view>
+                       <view class="courseAuth" >
+                           <image class="courseMyImage" src="{{ myImage }}" />
+                           <view class="courseText" >{{ name }}</view>
+                           <view class="courseText" >👽 FE @攻粽号：前端Sharing</view>
+                       </view>
+                       <view class="courseRem" >已更新 28 节｜1,106人已购买</view>
+                    </view>
+                </view>
+                 <view class="courseItem" >
+                    <image class="courseImage" src="./WechatIMG36801.png" />
+                    <view class="courseContent" >
+                       <view class="courseName" >React 进阶实践指南</view>
+                       <view class="courseDes" >彻底弄懂 React 基础和高阶用法，结合实践 Demo，告别技术瓶颈期，实现进阶~</view>
+                       <view class="courseAuth" >
+                           <image class="courseMyImage" src="{{ myImage }}" />
+                           <view class="courseText" >{{ name }}</view>
+                           <view class="courseText" >👽 FE @攻粽号：前端Sharing</view>
+                       </view>
+                       <view class="courseRem" >已更新 42 节｜7,918人已购买</view>
+                    </view>
+                </view>
+           </view>
+       </view>
+       <view class="main-right" >
+           <view class="person" >
+              个人成就
+           </view>
+           <view class="personList" >
+              <view class="personListItem" >
+                <image class="personListItemImg" src="./WechatIMG36806.png"  />
+                 <view class="personListItemTxt" >2021年度人气作者No.40</view>
+              </view>
+              <view class="personListItem" >
+                 <image class="personListItemImg" src="./WechatIMG36806.png"  />
+                 <view class="personListItemTxt" >社区共建者</view>
+              </view>
+              <view class="personListItem" >
+                 <image class="personListItemImg" src="./WechatIMG36806.png"  />
+                 <view class="personListItemTxt" >优秀创作者</view>
+              </view>
+              <view class="personListItem" >
+                 <image class="personListItemImg" src="./WechatIMG36806.png"  />
+                 <view class="personListItemTxt" >文章被点赞 22,180</view>
+              </view>
+              <view class="personListItem" >
+                 <image class="personListItemImg" src="./WechatIMG36806.png"  />
+                 <view class="personListItemTxt" >文章被阅读 924,588</view>
+              </view>
+              <view class="personListItem" >
+                 <image class="personListItemImg" src="./WechatIMG36806.png"  />
+                 <view class="personListItemTxt" >掘力值 62,880</view>
+              </view>
+           </view>
+           <view class="follow" >
+              <view class="followItem" >
+                    <view class="itemTitle" >关注了</view>
+                    <view class="itemCount" >50</view>
+              </view>
+              <view class="followItem" >
+                    <view class="itemTitle" >关注者</view>
+                    <view class="itemCount"  >8,875</view>
+              </view>
+           </view>
+       </view>
+    </view>
+</view>

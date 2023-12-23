@@ -1,0 +1,9 @@
+.writeCenter{
+    height: 36rpx;
+    width: 90rpx;
+    background-color: #1e80ff;
+    text-align: center;
+    line-height: 36rpx;
+    font-size: 16rpx;
+    color: #fff;
+}

@@ -1,0 +1,218 @@
+page{
+   background:#eee;
+}
+.container{
+    font-size:14rpx;
+    color: #fff;
+}
+.head{
+    height:60rpx;
+    display:flex;
+    background:#fff;
+    width:100%;
+    align-items: center; 
+    padding-left:45rpx;
+    position: relative;
+}
+.headimage{
+    width:107rpx;
+    height:22rpx;
+}
+.headName{
+    padding-left:18rpx;
+    color: #86909c;
+}
+.my{
+   position: absolute;
+   right:80rpx;
+   top:10rpx;
+   display:flex;
+}
+.myImage{
+    border-radius:50%;
+    height: 36rpx;
+    width: 36rpx;
+}
+.writeCenter{
+    height: 36rpx;
+    width: 90rpx;
+    background-color: #1e80ff;
+    text-align: center;
+    line-height: 36rpx;
+    font-size: 16rpx;
+    color: #fff;
+    border-radius: 5rpx;
+    margin-right:20rpx;
+    padding:0 15rpx;
+}
+.mainContent{
+    margin-top: 20rpx;
+    display:flex;
+}
+.main-left{
+    margin-left:300rpx;
+    width:678rpx;
+}
+.main{
+    padding:30rpx;
+    display:flex;
+    background:#fff;
+    padding-bottom:50rpx;
+    position: relative;
+}
+.mainImage{
+    width:90rpx;
+    height:90rpx;
+    margin-right:28rpx;
+    border-radius:50%;
+}
+.mainName{
+    font-size:24rpx;
+    color:#000;
+    font-weight: bold;
+}
+.mainDes{
+    color:rgb(114, 119, 123);
+    font-size:14rpx;
+    margin-top:10rpx;
+}
+.mainSet{
+    width:118rpx;
+    height:34rpx;
+    color: #007fff;
+    border: 1px solid #007fff;
+    border-radius: 4px;
+    position:absolute;
+    bottom:15rpx;
+    right:15rpx;
+    font-weight:bold;
+    line-height:34rpx;
+    text-align:center;
+}
+.course{
+    margin-top:15rpx;
+}
+.tab{
+    width:100%;
+    height:48rpx;
+    border-bottom: 1px solid #e4e6eb;
+    display:flex;
+    background:#fff;
+}
+.tabItem{
+    margin-right:4rpx;
+    padding:16rpx;
+    color: #909090;
+    font-size:16rpx;
+}
+.active{
+    color: #252933;
+    font-weight: 500;
+}
+.courseItem{
+    padding:20rpx;
+    display:flex;
+    background:#fff;
+    border-bottom: 1px solid #e4e6eb;
+}
+.courseImage{
+   margin-right:16rpx;
+   height:147rpx;
+   width:97rpx;
+   border-radius:5rpx;
+}
+.courseName{
+   font-size:20rpx;
+   line-height:28rpx;
+   color:rgb(37, 41, 51);
+}
+.courseDes{
+   margin-top:4rpx;
+   font-size:14rpx;
+   line-height:22rpx;
+   color:rgb(81, 87, 103);
+}
+.courseAuth{
+   margin-top:8rpx;
+   height:20rpx;
+   display:flex;
+}
+.courseMyImage{
+    border-radius:50rpx;
+    height:20rpx;
+    width:20rpx;
+    margin-right:3rpx;
+}
+.courseText{
+   color:rgb(81, 87, 103);
+   font-size:14rpx;
+   line-height:20rpx;
+}
+.courseRem{
+   margin-top:16rpx;
+   font-size:12rpx;
+   line-height:22rpx;
+   color:rgb(138, 145, 159);
+}
+.main-right{
+    width:240rpx;
+    margin-left:15rpx;
+}
+.person{
+    height:52rpx;
+    line-height:52rpx;
+    font-size:16rpx;
+    color:rgb(49, 68, 91);
+    border-bottom: 1px solid #e4e6eb;
+    font-weight:600;
+    background:#fff;
+    padding-left:15rpx;
+}
+.personList{
+    padding:15rpx;
+    background:#fff;
+}
+.personListItem{
+    height:24rpx;
+    margin-bottom:10rpx;
+    display:flex;
+}
+.personListItemImg{
+    height:24rpx;
+    width:24rpx;
+    border-radius:50%; 
+    margin-right:14rpx;
+}
+.personListItemTxt{
+    height:24rpx;
+    line-height:24rpx;
+    color:#000;
+    font-size:13rpx;
+}
+.follow{
+    margin-top:15rpx;
+    background:#fff;
+    display:flex;
+}
+.followItem{
+    flex:1;
+    padding-top:15rpx;
+    padding-bottom:15rpx;
+}
+.itemTitle{
+   height:19rpx;
+    font-size:16rpx;
+    color:rgb(49, 68, 91);
+    font-weight:500;
+    line-height:19rpx;
+    text-align:center;
+}
+.itemCount{
+    height:19rpx;
+    font-size:16rpx;
+    color:rgb(49, 68, 91);
+    font-weight:500;
+    line-height:19rpx;
+    text-align:center;
+    margin-top:6rpx;
+}

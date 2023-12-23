@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>my dsl project</title>
+  <style>
+    body{
+      margin: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="root" />
+</body>
+<!-- 在调试环境下，用 dev_tools 工具 -->
+<script src="./_devToolBridge.js"></script>
+<!-- 渲染层基础库——桥通信工具 -->
+<script src="./bridge.js"></script>
+<!-- 渲染层基础库——页面渲染工具 -->
+<script src="./boostaps.js"></script>
+<script>
+  /* 注册初始化事件 */
+  window.JSBridge.registerEvent('ready', function (res) {
+    const { pageId } = res
+    window.pageId = pageId
+    console.log('当前页面 pageId：',window.pageId)
+  })
+  /* 注册渲染任务 */
+  window.JSBridge.registerEvent('render', function (res) {
+    const { pageId, data } = res
+    if (window.pageId === pageId) {
+      handleDirect(data)
+      window.isInit = true
+    }
+  })
+  /* 添加样式 */
+  window.JSBridge.registerEvent('style',function(res){
+    const { pageId, data } = res
+    if (window.pageId === pageId) {
+      /* 装载样式 */
+      setCssToStyleHead(data)
+    }
+  })
+</script>
+
+</html>
